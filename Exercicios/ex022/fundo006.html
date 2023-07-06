@@ -6,11 +6,18 @@
     <title>Document</title>
     <style>
         body {
+            height: 100vh;
+            /*
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center-top;
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: 100%;*/
+
+            /* regra de sequencia de shorthand da propriedade background > color > image> position > repeat> {size} >attachment ( o size ainda nao está implementado nos browser, por isso funciona intermitentemente )*/
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
 
         }
 
